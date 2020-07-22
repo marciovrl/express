@@ -1,0 +1,36 @@
+{
+  "name": "express-example",
+  "version": "1.0.0",
+  "description": "Cars Quiz API in express.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/server.js",
+    "lint": "eslint src/** test/** --fix",
+    "test": "jest",
+    "secure-mode": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marciovrl/express.git"
+  },
+  "keywords": [],
+  "author": "Márcio Lemos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marciovrl/express/issues"
+  },
+  "homepage": "https://github.com/marciovrl/express#readme",
+  "devDependencies": {
+    "eslint": "^7.5.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "jest": "^26.1.0",
+    "supertest": "^4.0.2"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "consign": "^0.1.6",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.4"
+  }
+}

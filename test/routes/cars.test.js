@@ -1,0 +1,17 @@
+const request = require('supertest');
+const app = require('../../src/app');
+
+describe('Test at /cars endpoint', () => {
+  test('Must list all users', async () => {
+    const res = await request(app).get('/cars');
+    expect(res.status).toBe(200);
+    expect(res.body.length).toBeGreaterThan(0);
+  });
+
+  test('Must list cars by id', async () => {
+    const CAR_ID = 1;
+    const res = await request(app).get(`/cars/${CAR_ID}`);
+    expect(res.status).toBe(200);
+    expect(res.body.id).toBe(CAR_ID);
+  });
+});
