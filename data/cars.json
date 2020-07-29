@@ -1,9 +1,5 @@
 [
   {
-    "name": "List od cars"
-  },
-
-  {
     "id": 1,
     "name": "Volkswagen ID.3",
     "fuel": "electric",
