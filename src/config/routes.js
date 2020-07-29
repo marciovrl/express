@@ -1,5 +1,7 @@
-module.exports = (app) => {
-  app.route('/cars').get(app.routes.cars.findAll);
+const PATH = '/cars-quiz';
 
-  app.route('/cars/:id').get(app.routes.cars.find);
+module.exports = (app) => {
+  app.route(`${PATH}/cars`).get(app.routes.cars.findAll);
+
+  app.route(`${PATH}/cars/:id`).get(app.routes.cars.find);
 };
