@@ -8,4 +8,5 @@ module.exports = (app) => {
   app.route(`${PATH}/users`).post(app.routes.users.create);
   app.route(`${PATH}/users/:id`).put(app.routes.users.update);
   app.route(`${PATH}/users/:id`).delete(app.routes.users.remove);
+  app.route(`${PATH}/questions/:id`).get(app.routes.questions.find);
 };
