@@ -14,6 +14,6 @@ describe('Test at /cars endpoint', () => {
     const CAR_ID = 1;
     const res = await request(app).get(`${PATH}/${CAR_ID}`);
     expect(res.status).toBe(200);
-    expect(res.body[0].id).toBe(CAR_ID);
+    expect(res.body.id).toBe(CAR_ID);
   });
 });
