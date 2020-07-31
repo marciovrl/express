@@ -14,10 +14,10 @@ module.exports = () => {
     if (!filter.params.mail) return { error: 'Mail is required' };
 
     const newUser = {
-      'id': Number(users.length + 1),
-      'name': filter.params.name,
-      'mail': filter.params.mail,
-      'phone': filter.params.phone,
+      id: Number(users.length + 1),
+      name: filter.params.name,
+      mail: filter.params.mail,
+      phone: filter.params.phone,
     };
 
     users.push(newUser);
