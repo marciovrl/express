@@ -27,13 +27,13 @@ Run a local server.
 
 ## Features
 
-### `http://localhost:8080/cars`
+### `http://localhost:8080/cars-quiz/users/`
 
-List all cars.
+User CRUD.
 
-### `http://localhost:8080/cars/{car_id}`
+### `http://localhost:8080/cars-quiz/cars/`
 
-List of informed car ID.
+List cars.
 
 ## Configuration
 
