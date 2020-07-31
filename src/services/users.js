@@ -9,14 +9,15 @@ module.exports = () => {
     return user;
   };
 
-  const create = async (user) => {
-    if (!user.user.name) return { error: 'Name is required' };
-    if (!user.user.mail) return { error: 'Mail is required' };
+  const create = async (filter = {}) => {
+    if (!filter.params.name) return { error: 'Name is required' };
+    if (!filter.params.mail) return { error: 'Mail is required' };
 
-    const id = users.length + 1;
     const newUser = {
-      id,
-      ...user.user,
+      'id': Number(users.length + 1),
+      'name': filter.params.name,
+      'mail': filter.params.mail,
+      'phone': filter.params.phone,
     };
 
     users.push(newUser);
